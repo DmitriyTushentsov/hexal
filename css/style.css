@@ -1,0 +1,641 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+}
+
+.header {
+    height: 63px;
+    background: #323232;
+}
+
+.navigation {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.navigation:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: #323232 solid 26px;
+    border-right: #ffffff solid 45px;
+    border-left: #ffffff solid 45px;
+    position: absolute;
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logotype {
+    width: 64px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.circle {
+    height: 2px;
+    width: 2px;
+    background: #e4e9eb;
+    color: #e4e9eb;
+}
+
+.menu-item {
+    display: inline-block;
+    line-height: 4.6;
+    padding: 0;
+    vertical-align: top;
+    margin: 9px 15px 0 20px;
+}
+
+.menu-item-edge {
+    display: inline-block;
+    line-height: 4.6;
+    padding: 0;
+    vertical-align: top;
+    margin: 9px 1px 0 5px;
+}
+
+.item,
+.item:visited {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item:hover,
+.item:active {
+    color: #2eb398;
+}
+
+.item.active {
+    color: #2eb398;
+}
+
+.hexagon-container {
+    margin: 12px auto 0 auto;
+    padding: 0;
+    font-size: 0;
+    height: 500px;
+    text-align: center;
+    max-width: 1020px;
+    border-top: 1px solid #e4e9eb;
+    border-bottom: 1px solid #e4e9eb;
+    padding-top: 116px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.hex {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    width: 180px;
+    height: 206px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -38px;
+}
+
+.hex:hover,
+.hex:active {
+    -webkit-transform: scale(1.05) rotate(120deg);
+    -ms-transform: scale(1.05) rotate(120deg);
+    transform: scale(1.05) rotate(120deg);
+}
+
+.hex-layer1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hex-layer2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    position: relative;
+}
+
+.hex-br-layer {
+    display: none;
+}
+
+.hex-br-layer:nth-of-type(4) {
+    display: inline;
+}
+
+.hex-br-layer:nth-of-type(9) {
+    display: inline;
+}
+
+.hex1 .hex-layer2 {
+    background-image: url(../assets/images/hex1.jpg);
+}
+
+.hex2 .hex-layer2 {
+    background-image: url(../assets/images/hex2.jpg);
+}
+
+.hex3 .hex-layer2 {
+    background-image: url(../assets/images/hex3.jpg);
+}
+
+.hex4 .hex-layer2 {
+    background-image: url(../assets/images/hex4.jpg);
+}
+
+.hex5 .hex-layer2 {
+    background-image: url(../assets/images/hex5.jpg);
+}
+
+.hex6 .hex-layer2 {
+    background-image: url(../assets/images/hex6.jpg);
+}
+
+.hex7 .hex-layer2 {
+    background-image: url(../assets/images/hex7.jpg);
+}
+
+.hex8 .hex-layer2 {
+    background-image: url(../assets/images/hex8.jpg);
+}
+
+.hex9 .hex-layer2 {
+    background-image: url(../assets/images/hex9.jpg);
+}
+
+.hex10 .hex-layer2 {
+    background-image: url(../assets/images/hex10.jpg);
+}
+
+.hex11 .hex-layer2 {
+    background-image: url(../assets/images/hex11.jpg);
+}
+
+.hex12 .hex-layer2 {
+    background-image: url(../assets/images/hex12.jpg);
+}
+
+.hex13 .hex-layer2 {
+    background-image: url(../assets/images/hex13.jpg);
+}
+
+.info {
+    background: #2eb398;
+    margin-top: 11px;
+    padding: 15px 0;
+    height: 311px;
+}
+
+.info-article {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 20px;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+
+.info-photo {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    width: 180px;
+    height: 206px;
+    float: left;
+    margin-right: 18px;
+    margin-top: 6px;
+}
+
+.info-photo-layer1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.info-photo-layer2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../assets/images/photo.jpg);
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.info-name {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #d7fcf5;
+    padding: 0;
+    margin: 0;
+    line-height: 33px;
+}
+
+.info-profession {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    color: #20816d;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.info-text {
+    color: #d7fcf5;
+    margin-top: 11px;
+    line-height: 1.83;
+    text-align: justify;
+}
+
+.info-social-nets {
+    height: 24px;
+    margin-top: 38px;
+    text-align: right;
+    font-size: 0;
+}
+
+.info-social-button {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: #a5dbd4;
+    border-right: 1px solid #74ccbf;
+}
+
+.info-social-button:hover,
+.info-social-button:active {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.info-button-fb {
+    background: #a5dbd4 url("../assets/images/fb.png") no-repeat 50% 50%;
+}
+
+.info-button-tw {
+    background: #a5dbd4 url("../assets/images/tw.png") no-repeat 50% 50%;
+}
+
+.info-button-gp {
+    background: #a5dbd4 url("../assets/images/gp.png") no-repeat 50% 50%;
+}
+
+.info-button-pin {
+    background: #a5dbd4 url("../assets/images/pin.png") no-repeat 50% 50%;
+}
+
+.info-button-lin {
+    background: #a5dbd4 url("../assets/images/lin.png") no-repeat 50% 50%;
+}
+
+.info-button-dr {
+    background: #a5dbd4 url("../assets/images/dr.png") no-repeat 50% 50%;
+    border-right: none;
+}
+
+.getintouch {
+    background: #323232;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.getintouch-container {
+    height: 482px;
+    max-width: 790px;
+    padding: 50px 0 10px 12px;
+    margin: 0 auto;
+    border-top: 1px solid #2b2b2b;
+    font-size: 0;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.getintouch-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.getintouch-subtitle {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.125rem;
+    color: #bebebe;
+    margin: 0;
+}
+
+.getintouch-left-column {
+    display: inline-block;
+    width: 580px;
+    vertical-align: top;
+    font-size: 0.75rem;
+}
+
+.getintouch-left-column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.getintouch-contact-form {
+    color: #bebebe;
+}
+
+input[type="text"],
+input[type="email"] {
+    box-sizing: border-box;
+    background-color: #454545;
+    width: 580px;
+    height: 38px;
+    padding: 1rem;
+    border: none;
+    margin-top: 1rem;
+    color: #bebebe;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+
+}
+
+input[type="submit"] {
+    background-color: #2eb398;
+    padding: 11px 29px;
+    border: none;
+    margin-top: 13px;
+    text-transform: uppercase;
+    float: right;
+    color: #bebebe;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+textarea {
+    background-color: #454545;
+    box-sizing: border-box;
+    width: 580px;
+    height: 150px;
+    padding: 9px 13px;
+    border: none;
+    margin-top: 1rem;
+    color: #bebebe;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+}
+
+.getintouch-rigth-column {
+    display: inline-block;
+    width: 23%;
+    vertical-align: top;
+    font-size: 0.75rem;
+    margin-left: 20px;
+}
+
+.getintouch-contacts-text {
+    color: #bebebe;
+    text-align: justify;
+    line-height: 1.375rem;
+}
+
+.getintouch-contacts-text strong {
+    color: #e0e0e0;
+}
+
+.getintouch-contacts-addres {
+    padding-left: 22px;
+    background: url("../assets/images/address.png") no-repeat 0% 50%;
+    margin-top: 33px;
+    color: #bebebe;
+}
+
+.getintouch-contacts-phone {
+    padding-left: 22px;
+    background: url("../assets/images/phone.png") no-repeat 0% 50%;
+    margin-top: 6px;
+    color: #bebebe;
+}
+
+.getintouch-contacts-phone a {
+    color: #bebebe;
+    text-decoration: none;
+}
+
+
+.getintouch-contacts-email {
+    padding-left: 22px;
+    background: url("../assets/images/mail.png") no-repeat 0% 50%;
+    margin-top: 7px;
+    color: #bebebe;
+}
+
+.getintouch-contacts-email a {
+    color: #bebebe;
+    text-decoration: none;
+}
+
+.copyright {
+    height: 43px;
+    background: #222222;
+    margin: 0;
+    padding: 13px 223px;
+}
+
+.copyright-text {
+    max-width: 980px;
+    margin: 0 auto;
+    color: #454545;
+}
+
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Regular'), local('MavenProRegular'), url('../assets/fonts/Mavenproregular.woff2') format('woff2'), url('../assets/fonts/Mavenproregular.woff') format('woff'), url('../assets/fonts/Mavenproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Medium'), local('MavenProMedium'), url('../assets/fonts/Mavenpromedium.woff2') format('woff2'), url('../assets/fonts/Mavenpromedium.woff') format('woff'), url('../assets/fonts/Mavenpromedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Bold'), local('MavenProBold'), url('../assets/fonts/Mavenprobold.woff2') format('woff2'), url('../assets/fonts/Mavenprobold.woff') format('woff'), url('../assets/fonts/Mavenprobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: local('Maven Pro Black'), local('MavenProBlack'), url('../assets/fonts/Mavenproblack.woff2') format('woff2'), url('../assets/fonts/Mavenproblack.woff') format('woff'), url('../assets/fonts/Mavenproblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('../assets/fonts/latohairline.woff2') format('woff2'), url('../assets/fonts/latohairline.woff') format('woff'), url('../assets/fonts/latohairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('../assets/fonts/latohairlineitalic.woff2') format('woff2'), url('../assets/fonts/latohairlineitalic.woff') format('woff'), url('../assets/fonts/latohairlineitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Thin'), local('Lato-Thin'), url('../assets/fonts/latothin.woff2') format('woff2'), url('../assets/fonts/latothin.woff') format('woff'), url('../assets/fonts/latothin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Thin Italic'), local('Lato-ThinItalic'), url('../assets/fonts/latothinitalic.woff2') format('woff2'), url('../assets/fonts/latothinitalic.woff') format('woff'), url('../assets/fonts/latothinitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('../assets/fonts/latolight.woff2') format('woff2'), url('../assets/fonts/latolight.woff') format('woff'), url('../assets/fonts/latolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light Italic'), local('Lato-LightItalic'), url('../assets/fonts/latolightitalic.woff2') format('woff2'), url('../assets/fonts/latolightitalic.woff') format('woff'), url('../assets/fonts/latolightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../assets/fonts/latoregular.woff2') format('woff2'), url('../assets/fonts/latoregular.woff') format('woff'), url('../assets/fonts/latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Italic'), local('Lato-Italic'), url('../assets/fonts/latoitalic.woff2') format('woff2'), url('../assets/fonts/latoitalic.woff') format('woff'), url('../assets/fonts/latoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'), url('../assets/fonts/latomedium.woff2') format('woff2'), url('../assets/fonts/latomedium.woff') format('woff'), url('../assets/fonts/latomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium Italic'), local('Lato-MediumItalic'), url('../assets/fonts/latomediumitalic.woff2') format('woff2'), url('../assets/fonts/latomediumitalic.woff') format('woff'), url('../assets/fonts/latomediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold'), local('Lato-Semibold'), url('../assets/fonts/latosemibold.woff2') format('woff2'), url('../assets/fonts/latosemibold.woff') format('woff'), url('../assets/fonts/latosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold Italic'), local('Lato-SemiboldItalic'), url('../assets/fonts/latosemibolditalic.woff2') format('woff2'), url('../assets/fonts/latosemibolditalic.woff') format('woff'), url('../assets/fonts/latosemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('../assets/fonts/latobold.woff2') format('woff2'), url('../assets/fonts/latobold.woff') format('woff'), url('../assets/fonts/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('../assets/fonts/latobolditalic.woff2') format('woff2'), url('../assets/fonts/latobolditalic.woff') format('woff'), url('../assets/fonts/latobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Heavy'), local('Lato-Heavy'), url('../assets/fonts/latoheavy.woff2') format('woff2'), url('../assets/fonts/latoheavy.woff') format('woff'), url('../assets/fonts/latoheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Heavy Italic'), local('Lato-HeavyItalic'), url('../assets/fonts/latoheavyitalic.woff2') format('woff2'), url('../assets/fonts/latoheavyitalic.woff') format('woff'), url('../assets/fonts/latoheavyitalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black'), local('Lato-Black'), url('../assets/fonts/latoblack.woff2') format('woff2'), url('../assets/fonts/latoblack.woff') format('woff'), url('../assets/fonts/latoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('../assets/fonts/latoblackitalic.woff2') format('woff2'), url('../assets/fonts/latoblackitalic.woff') format('woff'), url('../assets/fonts/latoblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
